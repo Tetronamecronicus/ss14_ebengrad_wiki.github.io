@@ -1,8 +1,64 @@
 body {
+    font-variant: small-caps;
+    font-family: sans-serif;
     background-color: rgb(9, 12, 16);
     color: rgb(201, 209, 217);
     border: 1cm solid rgba(0, 0, 0, 0);
+
 }
+
+body header h1 {
+    border-left: 0.5cm;
+    border-left-color: green;
+    font-size:40px;
+    margin-bottom: 1cm;
+    padding-top: 0.7cm;
+    padding-bottom: 0.7cm;
+    padding-left: 1cm;
+    border-style: groove;
+    border-radius: 1cm;
+    background-color: rgb(5, 6, 8);
+}
+
+body header h2 {
+    border-left: 0.5cm;
+    border-left-color: darkred;
+    padding-top: 0.7cm;
+    padding-bottom: 0.7cm;
+    padding-left: 1cm;
+    border-style:ridge;
+    border-radius: 1cm;
+    background-color: rgb(5, 6, 8);
+}
+
+body main {
+    padding-top: 1cm;
+}
+
 a {
     color: rgb(88, 166, 255);
+}
+
+footer {
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-bottom: 1cm;
+    padding-top: 0.5cm;
+    margin-top: 2cm;
+    background-color: rgb(5, 6, 8);
+    border-radius: 0.5cm;
+}
+
+footer li{
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+}
+
+footer li b {
+    margin-right: 1cm;
+}
+
+footer li a {
+
+    margin-right: 1cm;
 }
