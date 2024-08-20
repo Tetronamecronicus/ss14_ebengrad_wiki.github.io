@@ -11,11 +11,11 @@ main {
     margin-top: 2cm;
     padding-top: 0.3cm;
     padding-bottom: 0.7cm;
-    border-color: rgb(5, 6, 8);
+    border-color: rgb(1, 2, 4);
     padding-left: 1cm;
     border-style: solid;
     border-radius: 1cm;
-    background-color: rgb(5, 6, 8);
+    background-color: rgb(1, 2, 4);
 }
 
 
@@ -32,7 +32,7 @@ body header img {
     margin-right: 0.5cm;
     position:relative;
     top: 0.1cm;
-    border-color: rgb(5, 6, 8);
+    border-color: rgb(1, 2, 4);
     border-radius: 1cm;
     border-width: 0.5cm;
     border-style: solid;
@@ -40,7 +40,7 @@ body header img {
 
 body header h1 {
     border-left: 0.5cm;
-    border-color: rgb(5, 6, 8);
+    border-color: rgb(1, 2, 4);
     border-left-color: green;
     font-size:40px;
     margin-bottom: 1cm;
@@ -50,12 +50,12 @@ body header h1 {
     border-style: solid;
     border-left-style: groove;
     border-radius: 1cm;
-    background-color: rgb(5, 6, 8);
+    background-color: rgb(1, 2, 4);
 }
 
 body header h2 {
     border-left: 0.5cm;
-    border-color: rgb(5, 6, 8);
+    border-color: rgb(1, 2, 4);
     border-left-color: darkred;
     padding-top: 0.7cm;
     padding-bottom: 0.7cm;
@@ -63,7 +63,7 @@ body header h2 {
     border-style:solid;
     border-left-style: ridge;
     border-radius: 1cm;
-    background-color: rgb(5, 6, 8);
+    background-color: rgb(1, 2, 4);
 }
 
 a {
@@ -76,7 +76,7 @@ footer {
     padding-bottom: 1cm;
     padding-top: 0.5cm;
     margin-top: 2cm;
-    background-color: rgb(5, 6, 8);
+    background-color: rgb(1, 2, 4);
     border-radius: 1cm;
     text-align: left;
     padding-right: 1cm;
