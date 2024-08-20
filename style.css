@@ -8,7 +8,7 @@ body {
 
 main {
     margin-top: 2cm;
-    padding-top: 0.3cm;
+    padding-top: 0.4cm;
     padding-bottom: 0.7cm;
     border-color: rgb(1, 2, 4);
     padding-left: 1cm;
@@ -17,6 +17,9 @@ main {
     background-color: rgb(1, 2, 4);
 }
 
+.dd {
+    margin-left: 1cm;
+}
 
 main h1 {
     font-size:40px;
@@ -82,6 +85,7 @@ footer {
 }
 
 footer table tr th {
+    text-align: left;
     padding-right: 1cm;
 }
 
