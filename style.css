@@ -7,34 +7,52 @@ body {
 
 }
 
+main {
+    margin-top: 2cm;
+    padding-top: 0cm;
+    padding-bottom: 0.7cm;
+    border-color: rgb(5, 6, 8);
+    padding-left: 1cm;
+    border-style: solid;
+    border-radius: 1cm;
+    background-color: rgb(5, 6, 8);
+}
+
+
+main h1 {
+    font-size:40px;
+}
+
+main img {
+    border-radius: 0.3cm;
+}
+
 body header h1 {
     border-left: 0.5cm;
-    border-color: rgb(201, 209, 217);
+    border-color: rgb(5, 6, 8);
     border-left-color: green;
     font-size:40px;
     margin-bottom: 1cm;
     padding-top: 0.7cm;
     padding-bottom: 0.7cm;
     padding-left: 1cm;
-    border-style: groove;
+    border-style: solid;
+    border-left-style: groove;
     border-radius: 1cm;
     background-color: rgb(5, 6, 8);
 }
 
 body header h2 {
     border-left: 0.5cm;
-    border-color: rgb(201, 209, 217);
+    border-color: rgb(5, 6, 8);
     border-left-color: darkred;
     padding-top: 0.7cm;
     padding-bottom: 0.7cm;
     padding-left: 1cm;
-    border-style:ridge;
+    border-style:solid;
+    border-left-style: ridge;
     border-radius: 1cm;
     background-color: rgb(5, 6, 8);
-}
-
-body main {
-    padding-top: 1cm;
 }
 
 a {
