@@ -51,21 +51,15 @@ footer {
     border-radius: 0.5cm;
 }
 
-footer table tr th {
+footer table {
     text-align: left;
+}
+
+footer table tr th {
     padding-right: 1cm;
 }
 
 footer li{
     padding-top: 0.1cm;
     padding-bottom: 0.1cm;
-}
-
-footer li b {
-    margin-right: 1cm;
-}
-
-footer li a {
-
-    margin-right: 1cm;
 }
