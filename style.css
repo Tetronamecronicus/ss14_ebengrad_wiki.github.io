@@ -49,10 +49,8 @@ footer {
     margin-top: 2cm;
     background-color: rgb(5, 6, 8);
     border-radius: 0.5cm;
-}
-
-footer table {
     text-align: left;
+    padding-right: 1cm;
 }
 
 footer table tr th {
