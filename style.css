@@ -1,20 +1,31 @@
 body {
+    text-shadow: 0 0 0.4cm red;
+    background-image: url("img/BackGround.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode:difference;
+    text-size-adjust:inherit 50%;
+    font-size: smaller;
     font-variant: small-caps;
     font-family: sans-serif;
-    background-color: rgb(9, 12, 16);
+    background-color: rgb(5, 5, 5);
     color: rgb(201, 209, 217);
-    border: 1cm solid rgba(0, 0, 0, 0);
+    border: 0.3cm outset rgba(0, 0, 0, 0);
 }
 
 main {
-    margin-top: 2cm;
-    padding-top: 0.4cm;
-    padding-bottom: 0.7cm;
-    border-color: rgb(1, 2, 4);
-    padding-left: 1cm;
-    border-style: solid;
-    border-radius: 1cm;
-    background-color: rgb(1, 2, 4);
+    margin-top: 1cm;
+    padding-top: 0.2cm;
+    padding-bottom: 0.35cm;
+    border-color: rgba(14, 3, 3, 0.8);
+    padding-left: 0.5cm;
+    border-style: outset;
+    border-radius: 0.4cm;
+    background-color: rgba(1, 2, 4, 0.8);
+}
+
+.noBorder{
+    border-style: none;
 }
 
 .dd {
@@ -26,6 +37,7 @@ main h1 {
 }
 
 main img {
+    border-style: solid;
     border-radius: 0.3cm;
 }
 body header img {
@@ -34,38 +46,39 @@ body header img {
     margin-right: 0.5cm;
     position:relative;
     top: 0.1cm;
-    border-color: rgb(1, 2, 4);
+    border-color: rgba(14, 3, 3, 0.8);
+    background-color: rgba(1, 2, 4, 0.8);
     border-radius: 1cm;
     border-width: 0.5cm;
-    border-style: solid;
+    border-style: outset;
 }
 
 body header h1 {
     border-left: 0.5cm;
-    border-color: rgb(1, 2, 4);
+    border-color: rgba(14, 3, 3, 0.8);
     border-left-color: green;
     font-size:40px;
     margin-bottom: 1cm;
     padding-top: 0.7cm;
     padding-bottom: 0.7cm;
     padding-left: 1cm;
-    border-style: solid;
+    border-style: outset;
     border-left-style: groove;
-    border-radius: 1cm;
-    background-color: rgb(1, 2, 4);
+    border-radius: 0.4cm;
+    background-color: rgba(1, 2, 4, 0.8);
 }
 
 body header h2 {
     border-left: 0.5cm;
-    border-color: rgb(1, 2, 4);
+    border-color: rgba(14, 3, 3, 0.8);
     border-left-color: darkred;
     padding-top: 0.7cm;
     padding-bottom: 0.7cm;
     padding-left: 1cm;
-    border-style:solid;
+    border-style:outset;
     border-left-style: ridge;
-    border-radius: 1cm;
-    background-color: rgb(1, 2, 4);
+    border-radius: 0.4cm;
+    background-color: rgba(1, 2, 4, 0.8);
 }
 
 a {
@@ -73,15 +86,18 @@ a {
 }
 
 footer {
-    padding-left: 1cm;
-    padding-right: 1cm;
-    padding-bottom: 1cm;
-    padding-top: 0.5cm;
-    margin-top: 2cm;
-    background-color: rgb(1, 2, 4);
-    border-radius: 1cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-bottom: 0.5cm;
+    padding-top: 0.25cm;
+    margin-top: 1cm;
+    background-color: rgba(1, 2, 4, 0.8);
+    border-color: rgba(14, 3, 3, 0.8);
+    border-radius: 0.4cm;
     text-align: left;
-    padding-right: 1cm;
+    border-style: outset;
+    padding-right: 0.5cm;
+
 }
 
 footer table tr th {
