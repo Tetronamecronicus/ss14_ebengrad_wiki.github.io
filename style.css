@@ -1,5 +1,5 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
   }
 
 body {
@@ -50,6 +50,42 @@ main img {
     border-radius: 0.3cm;
 }
 
+/*.LogoText {
+    padding-right: 1cm;
+    border-left: 0.5cm;
+    border-color: rgba(14, 3, 3, 0.8);
+    border-left-color: green;
+    font-size:40px;
+    margin-bottom: 1cm;
+    padding-top: 0.7cm;
+    padding-bottom: 0.7cm;
+    padding-left: 1cm;
+    border-style: outset;
+    border-left-style: groove;
+    border-radius: 0.4cm;
+    background-color: rgba(1, 2, 4, 0.8);
+}
+
+.Logo a img{
+    width: 4cm;
+    height: 4cm;
+    margin-right: 0.5cm;
+    position:relative;
+    top: 0.1cm;
+    border-color: rgba(14, 3, 3, 0.8);
+    background-color: rgba(1, 2, 4, 0.8);
+    border-radius: 1cm;
+    border-width: 0.5cm;
+    border-style: outset;
+}
+
+.Logo a img:hover {
+    animation: sizeUp 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}*/
+
+
 body header img {
     width: 4cm;
     height: 4cm;
@@ -68,7 +104,8 @@ body header img:hover {
     animation-fill-mode: forwards;
 }
 
-body header h1 {
+
+header h1 {
     border-left: 0.5cm;
     border-color: rgba(14, 3, 3, 0.8);
     border-left-color: green;
@@ -83,7 +120,7 @@ body header h1 {
     background-color: rgba(1, 2, 4, 0.8);
 }
 
-body header h2 {
+header h2 {
     border-left: 0.5cm;
     border-color: rgba(14, 3, 3, 0.8);
     border-left-color: darkred;
@@ -119,9 +156,16 @@ footer {
 
 }
 
+footer nav {
+    padding: 0.1cm 0.1cm;
+    text-align: left;
+    overflow-x: auto;
+    white-space: wrap;
+}
+
 footer table tr th {
     text-align: left;
-    padding-right: 1cm;
+    padding-right: 0.4cm;
 }
 
 footer li{
