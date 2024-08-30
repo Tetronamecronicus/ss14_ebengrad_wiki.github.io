@@ -16,6 +16,24 @@ body {
     border: 0.3cm outset rgba(0, 0, 0, 0);
 }
 
+.imageButton {
+    background-image: url("img/BackGround.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    padding: 1cm;
+    margin: 0.3cm;
+    padding-right: 3cm;
+    border-width: 0cm;
+    border-radius: 1cm;
+    white-space: nowrap;
+    overflow-wrap:normal;
+}
+
+.imageButtonContainer {
+    line-height: 3.4cm;
+}
+
 main {
     font-family:cursive;
     margin-top: 1cm;
