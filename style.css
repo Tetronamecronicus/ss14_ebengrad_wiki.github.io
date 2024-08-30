@@ -41,7 +41,7 @@ main {
     padding-bottom: 0.35cm;
     border-color: rgba(14, 3, 3, 0.8);
     padding-left: 0.5cm;
-    padding-right: 0.5cm; 
+    padding-right: 0.5cm;
     border-style: outset;
     border-radius: 0.4cm;
     background-color: rgba(1, 2, 4, 0.8);
@@ -220,4 +220,8 @@ footer li{
 @keyframes sizeUp {
     from { transform:scale(1,1); }
     to { transform: scale(1.1,1.1); }
+}
+
+.classniuclass {
+
 }
