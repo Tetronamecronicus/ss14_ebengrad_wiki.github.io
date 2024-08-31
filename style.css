@@ -74,7 +74,14 @@ img {
 }
 
 .dd {
-    margin-left: 1cm;
+    border-left: 1cm;
+    border-width: 0.0cm;
+    border-left-width: 0.2cm;
+    padding-left: 0.7cm;
+    border-style:ridge;
+    border-left-color: darkred;
+    margin-left: 0.2cm;
+    border-radius: 0.5cm;
 }
 
 main h1 {
