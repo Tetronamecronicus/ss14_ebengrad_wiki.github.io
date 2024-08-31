@@ -40,7 +40,7 @@ body {
     grid-auto-rows: minmax(120px, auto);
     grid-gap: 0.3cm;
     text-align: left;
-    
+
 }
 
 main {
@@ -58,7 +58,7 @@ main {
 }
 
 main h3, main h2, main h1{
-    
+
     font-family:sans-serif;
     font-variant: small-caps;
 }
