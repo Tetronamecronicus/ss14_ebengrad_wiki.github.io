@@ -30,7 +30,8 @@
       </article>
     </main>
     <footer>
-      <nav><h2>Информация о сервере:</h2>
+      <h2>Информация о сервере:</h2>
+      <nav>
         <div style="font-size: large;">
           <a href="../../index.html">Главная страница</a> | 
           <a href="../../ServerInfo\rules.html">Правила сервера</a>
@@ -47,10 +48,11 @@
           <a href="../../ArticleHubs\6_CorpLaw/0_Hub.html">Корпоративные законы</a>
         </div>
       </nav>
-      <h2>Статьи-категории:</h2>
+      <h2>Статьи / Статьи-категории:</h2>
+      <input type="text" id="mySearch" onkeyup="SearchCats()" placeholder="Поиск..." title="Type in a category">
       <nav>   
         <div style="font-size: small;">
-          <table>
+          <table id="myMenu">
             <tr>
               <th>Руководства:</th>
               <th>Роли:</th>
@@ -59,132 +61,210 @@
               <th>Бюрократия:</th>
               <th>Корпоративные законы:</th>
             </tr>
-                        <tr>
-          <th><a href="../../ArticleHubs\1_Guides/Antags.html">Антаги</a></th>
-          <th><a href="../../ArticleHubs\2_Roles/Staia1.html">Еще статья</a></th>
-          <th><a href="../../ArticleHubs\3_Lore/ConfederationOfMages.html">Другая статья</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Cargo.html">Снабжение</a></th>
-          <th></th>
-          <th></th>
-            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/CaveWorkers.html">Снабжение</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/Empire.html">Другая статья</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Command.html">Командование</a></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/Antags.html">Антаги</a></th>          <th><a href="../../ArticleHubs\2_Roles/Staia1.html">Еще статья</a></th>          <th><a href="../../ArticleHubs\3_Lore/ConfederationOfMages.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Cargo.html">Снабжение</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/CentCom.html">ЦК</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/Gefest.html">Другая статья</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Engineer.html">Инженерный</a></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/CaveWorkers.html">Снабжение</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/Empire.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Command.html">Командование</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/Comand.html">Командование</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/GIUS.html">Другая статья</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Justice.html">Юридический</a></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/CentCom.html">ЦК</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/Gefest.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Engineer.html">Инженерный</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/Engineering.html">Инженерный</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/Heritage.html">Другая статья</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Medical.html">Медицинский</a></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/Comand.html">Командование</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/GIUS.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Justice.html">Юридический</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/Medicine.html">Медицина</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/Kosmologistika.html">Другая статья</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Science.html">Научный</a></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/Engineering.html">Инженерный</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/Heritage.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Medical.html">Медицинский</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/Science.html">Эпистемика</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/NakamuraEngineering.html">Другая статья</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Security.html">Служба безопасности</a></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/Medicine.html">Медицина</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/Kosmologistika.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Science.html">Научный</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/Security.html">СБ</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/NanoTrasen.html">NanoTrasen</a></th>
-          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Service.html">Сервисный</a></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/Science.html">Эпистемика</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/NakamuraEngineering.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Security.html">Служба безопасности</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th><a href="../../ArticleHubs\1_Guides/Service.html">Сервис</a></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/Playable.html">Игровые расы</a></th>
-          <th></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/Security.html">СБ</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/NanoTrasen.html">NanoTrasen</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures/Service.html">Сервисный</a></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/SNK.html">Другая статья</a></th>
-          <th></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th><a href="../../ArticleHubs\1_Guides/Service.html">Сервис</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/Playable.html">Игровые расы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/Syndicate.html">Другая статья</a></th>
-          <th></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/SNK.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/UGE.html">Объединённое Правительство Земли</a></th>
-          <th></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/Syndicate.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/USSP.html">Другая статья</a></th>
-          <th></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/UGE.html">ОПЗ</a></th>          <th></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th></th>
-          <th></th>
-          <th><a href="../../ArticleHubs\3_Lore/Vitezstvi.html">Другая статья</a></th>
-          <th></th>
-          <th></th>
-          <th></th>
-            </tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/USSP.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
             <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-            </tr>
-                      </table>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore/Vitezstvi.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th></th>          <th></th>          <th></th>          <th></th>            </tr>
+          </table>
         </div>
       </nav>
+      <button class="allArticles">Показать все статьи</button>
+      <div class="allart">
+        <input type="text" id="mySearch2" onkeyup="SearchAll()" placeholder="Поиск..." title="Type in a category">
+        <nav>   
+          <div style="font-size: small;">
+            <table id="myMenu2">
+              <th>Руководства:</th>
+              <th>Роли:</th>
+              <th>Лор:</th>
+              <th>Стандартные рабочие процедуры:</th>
+              <th>Бюрократия:</th>
+              <th>Корпоративные законы:</th>
+            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags.html">Антаги</a></th>          <th><a href="../../ArticleHubs\2_Roles\Staia1.html">Еще статья</a></th>          <th><a href="../../ArticleHubs\3_Lore\ConfederationOfMages.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Cargo.html">Снабжение</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\CaveWorkers.html">Снабжение</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Empire.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Command.html">Командование</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\CentCom.html">ЦК</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Gefest.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Engineer.html">Инженерный</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Comand.html">Командование</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\GIUS.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Justice.html">Юридический</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Engineering.html">Инженерный</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Heritage.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Medical.html">Медицинский</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Medicine.html">Медицина</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Kosmologistika.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Science.html">Научный</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Science.html">Эпистемика</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\NakamuraEngineering.html">Другая статья</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Security.html">Служба безопасности</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Security.html">СБ</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\NanoTrasen.html">NanoTrasen</a></th>          <th><a href="../../ArticleHubs\4_StandardOperatingProcedures\Service.html">Сервисный</a></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Service.html">Сервис</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable.html">Игровые расы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\Agent.html">Агент</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\SNK.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\AO.html">ЯО</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Syndicate.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\Mage.html">Маг</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\UGE.html">ОПЗ</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\Ninga.html">Ниндзя</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\USSP.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\Revolution.html">Революционер</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Vitezstvi.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\SleepingAgent.html">Спящий Агент</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Azara.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\Thief.html">Вор</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Chang.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Antags\Zombie.html">Зомби</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Donk.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\CaveWorkers\Utili.html">Утилизаторы</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\DrunkMasters.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Comand\Capitan.html">Капитан</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Gorlex.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Comand\Personal.html">Глав. Персонала</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\interGalactic.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Engineering\Atmos.html">Атмос</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Pharmaceutics.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Engineering\DAM.html">ДАМ</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Robust.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Engineering\Singularity.html">Сингулярность</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Saibasan.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Engineering\Solar.html">Солн. Панели</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Shady.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Engineering\TEG.html">ТЭГ</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\OtherCorps\Waffle.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Engineering\Tesla.html">Тесла</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Arachnid.html">Арахниды</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Medicine\Chemistry.html">Химия</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Diona.html">Дионы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Medicine\Healing.html">Лечение</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Dwarf.html">Дворфы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Science\Anomalys.html">Аномалии</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Felinid.html">Фелениды</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../ArticleHubs\1_Guides\Science\Epistemics.html">Эпистемика</a></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Goblin.html">Гоблины</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Harpy.html">Гарпии</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Human.html">Люди</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Moth.html">Нианы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Oni.html">О́ни</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Plasmaman.html">Плазмамены</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\reptilian.html">Унатхи</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\shadowkin.html">Сумеречники</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\SlimePerson.html">Слаймолюды</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Vox.html">Воксы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../ArticleHubs\3_Lore\Playable\Vulpkanin.html">Вульпканины</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th></th>          <th></th>          <th></th>          <th></th>            </tr>
+            </table>
+          </div>
+        </nav>
+      </div>
+
       <h2 style="padding-top: 0.1cm;">Полезные ссылки:</h2>
       <p class="links"><a href="https://discord.com/invite/sqjEbTgm6R/"><img class="linksImg" src="../../img/discord.svg" alt="Discord">Дискорд сервер</a></p>
       <p class="links"><a href="https://ss14.madeline.sh/hub/2110"><img class="linksImg" src="../../img/crown.svg" alt="Monitoring">Мониторинг активности сервера</a></p>
-      <p class="links"><a href="https://boosty.to/bruninrts/donate/"><img class="linksImg" src="../../img/boosty.svg" alt="Boosty">Бусти сервера</a></p>    </footer>
+      <p class="links"><a href="https://boosty.to/bruninrts/donate/"><img class="linksImg" src="../../img/boosty.svg" alt="Boosty">Бусти сервера</a></p>
+
+  <script>
+    function SearchCats() {
+      var input, filter, ul, tr, th, i, a;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      tr = ul.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        th = tr[i].getElementsByTagName("th");
+        for (j = 0; j < th.length; j++) {
+          if(th[j].lastElementChild != null){
+          a = th[j].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a.style.pointerEvents = "all";
+            a.style.userSelect = "auto";
+            a.style.color = "rgb(88, 166, 255)";
+          } else {
+            a.style.pointerEvents = "none";
+            a.style.userSelect = "none";
+            a.ariaDisabled==true;
+            a.style.color = "rgba(0,0,0,0)";
+          }
+          }
+        }
+      }
+    }
+    function SearchAll() {
+      var input, filter, ul, tr, th, i, a;
+      input = document.getElementById("mySearch2");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu2");
+      tr = ul.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        th = tr[i].getElementsByTagName("th");
+        for (j = 0; j < th.length; j++) {
+          if(th[j].lastElementChild != null){
+          a = th[j].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a.style.pointerEvents = "all";
+            a.style.userSelect = "auto";
+            a.style.color = "rgb(88, 166, 255)";
+          } else {
+            a.style.pointerEvents = "none";
+            a.style.userSelect = "none";
+            a.ariaDisabled==true;
+            a.style.color = "rgba(0,0,0,0)";
+          }
+          }
+        }
+      }
+    }
+
+  var acc = document.getElementsByClassName("allArticles");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
   </body>
 </html>
