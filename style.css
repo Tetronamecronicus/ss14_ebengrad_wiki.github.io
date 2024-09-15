@@ -23,7 +23,9 @@ body {
     background-repeat: no-repeat;
     border-style: solid;
     box-shadow: 0 0 1cm black, 0 0 1cm black inset;
-    padding: 1cm;
+    padding: 0.2cm;
+    padding-left: 1cm;
+    padding-top: 1.09cm;
     margin: 5px;
     padding-right: 3cm;
     border-width: 0cm;
@@ -86,6 +88,18 @@ header a img {
     margin-left: 0.2cm;
     border-radius: 0.5cm;
 }
+
+.Mdd {
+    border-left: 1cm;
+    border-width: 0.0cm;
+    border-left-width: 0.2cm;
+    padding-left: 0.2cm;
+    border-style:ridge;
+    border-left-color: darkred;
+    margin-left: 0cm;
+    border-radius: 0.3cm;
+}
+
 
 main h1 {
     font-size:40px;
@@ -184,7 +198,11 @@ a:hover {
     color: rgb(44, 109, 184);
 }
 
-footer nav {
+.scroll div table tr th{
+    padding: 0.2cm;
+}
+
+footer nav, .scroll {
     border-top:ridge;
     border-bottom: groove;
     border-color: rgba(14, 3, 3, 0.8);
@@ -194,6 +212,10 @@ footer nav {
     border-radius: 0.3cm;
     margin-top: 0.3cm;
     margin-bottom: 0.3cm;
+}
+
+.scroll{
+    padding-bottom: 0.15cm;
 }
 
 .allArticles {
@@ -246,7 +268,6 @@ footer {
     font-variant: small-caps;
     padding-left: 0.5cm;
     padding-right: 0.5cm;
-
     margin-top: 1cm;
     background-color: rgba(1, 2, 4, 0.8);
     border-color: rgba(14, 3, 3, 0.8);
@@ -257,7 +278,12 @@ footer {
 
 }
 
-footer nav {
+.scroll{
+    white-space: wrap;
+    overflow-x: auto;
+}
+
+footer nav{
     padding: 0.1cm 0.1cm;
     text-align: left;
     overflow-x: auto;
@@ -279,6 +305,10 @@ footer a {
 footer li{
     padding-top: 0.1cm;
     padding-bottom: 0.1cm;
+}
+
+.PUp{
+    padding-top: 1cm;
 }
 
 .links {
