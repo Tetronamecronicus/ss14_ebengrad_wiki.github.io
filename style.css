@@ -198,6 +198,36 @@ a:hover {
     color: rgb(44, 109, 184);
 }
 
+.visualGrid{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid: auto-flow dense / repeat(19, 1cm);
+    grid-auto-rows: minmax(0, auto);
+    grid-gap: 0cm;
+    text-align: center;
+    border-radius: 0.5cm;
+    border-color: rgb(15, 25, 35);
+    border-width: 0.1cm;
+    border-style: solid;
+}
+
+.visualGrid a{
+    letter-spacing: 0px;
+    color: white;
+    pointer-events: none;
+    user-select: none;
+    width: 1cm;
+    height: 1cm;
+    border-width: 0.02cm;
+    font-size: x-large;
+    border-radius: 0.0cm;
+    border-color: rgb(15, 25, 35);
+    border-style: solid;
+    background-color: rgb(0, 0, 6);
+}
+
 .scroll div table tr th{
     padding: 0.2cm;
 }
@@ -278,7 +308,7 @@ footer {
 
 }
 
-.scroll{
+.scroll, .visualGrid{
     white-space: wrap;
     overflow-x: auto;
 }
