@@ -10,8 +10,80 @@
     <meta property="og:description" content="***************">  <!--  Краткое описание статьи которое будет появлятся в дискорде под ссылками -->
   </head>
   <body>
+    <button class="closeButton" style="right:auto;margin-left: 0px; position: fixed;" onclick="openNav()">→</button>
+    <section class="side" id="sideBar">
+      <button class="closeButton" onclick="closeNav()">←</button>
+
+<a href="../../../index.html" style="margin-top: 1cm;"><img src="../../../img/Ebengrad.png" alt="Ebengrad"></a>
+
+      <h1>Вики Ebengrad</h1>
+      <nav>
+      <p>Информация о сервере:</p>
+        <div style="font-size: small;">
+
+          <a href="../../../ServerInfo\0_rules.html">Правила сервера</a>  
+          <a href="../../../ServerInfo\newbieHelp.html">Помощь новичкам</a>
+
+        </div>
+      </nav>
+      <nav>
+      <p>Статьи-хабы:</p>
+        <div style="font-size: small;">
+
+          <a href="../../../ArticleHubs\1_Guides/0_Hub.html">Руководства</a>  
+          <a href="../../../ArticleHubs\2_Roles/0_Hub.html">Роли</a>  
+          <a href="../../../ArticleHubs\3_Lore/0_Hub.html">Лор</a>  
+          <a href="../../../ArticleHubs\4_StandardOperatingProcedures/0_Hub.html">Стандартные рабочие процедуры</a>  
+          <a href="../../../ArticleHubs\5_Bureaucracy/0_Hub.html">Бюрократия</a>  
+          <a href="../../../ArticleHubs\6_CorpLaw/0_Hub.html">Корпоративные законы</a>
+
+        </div>
+      </nav>
+      <button class="button" onclick="downFunction()">К Статьям</button>
+      <section class="sideBottom" id="sideBar2">
+
+      <a href="https://discord.com/invite/sqjEbTgm6R/"><img class="linksImg" src="../../../img/discord.svg" alt="Discord">ДС</a>
+      <a href="https://ss14.madeline.sh/hub/2110"><img class="linksImg" src="../../../img/crown.svg" alt="Monitoring">Мон.</a>
+      <a href="https://boosty.to/bruninrts/donate/"><img class="linksImg" src="../../../img/boosty.svg" alt="Boosty">Бусти</a>
+
+        <p style="color: rgb(48, 48, 48); margin-top: 0.3cm; text-shadow: none;">Powered by: nothing</p>
+      </section>
+      <script>
+        function downFunction() {
+          document.body.scrollTop = 9999999;
+          document.documentElement.scrollTop = 9999999;
+          document.getElementById("sideBar").style.width = "0px";
+          document.getElementById("sideBar2").style.width = "0px";
+          document.getElementById("sideBar").style.padding = "0cm";
+          document.getElementById("sideBar2").style.padding = "0cm";
+          document.getElementById("sideBar").style.border.width = "0px";
+          document.getElementById("sideBar2").style.border.width = "0px";
+        }
+      </script>
+    </section>
+    <script>
+      function openNav() {
+        document.getElementById("sideBar").style.width = "180px";
+        document.getElementById("sideBar2").style.width = "180px";
+        document.getElementById("sideBar").style.padding = "0.1cm";
+        document.getElementById("sideBar2").style.padding = "0.1cm";
+        document.getElementById("sideBar").style.border.width = "3px";
+        document.getElementById("sideBar2").style.border.width = "3px";
+        //document.getElementById("bod").style = "margin-left: 180px";
+      }
+
+      function closeNav() {
+        document.getElementById("sideBar").style.width = "0px";
+        document.getElementById("sideBar2").style.width = "0px";
+        document.getElementById("sideBar").style.padding = "0cm";
+        document.getElementById("sideBar2").style.padding = "0cm";
+        document.getElementById("sideBar").style.border.width = "0px";
+        document.getElementById("sideBar2").style.border.width = "0px";
+        //document.getElementById("bod").style = "margin-left: 0px";
+      }
+    </script>
+
     <header>
-      <a href="../../../index.html"><img src="../../../img/Ebengrad.png" alt="Ebengrad"></a>
       <h1>Вики сервера Ebengrad</h1>
       <h2 style="border-left-color: grey;">Vitezstvi</h2>
     </header>
@@ -139,6 +211,62 @@ Vitezstvi – это частная военно-производственна�
               <th>ЦК:</th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Countrys\USSP.html">СССП</a></th>          <th></th>          <th></th>          <th></th>            </tr>
             <tr>
               <th>Командование:</th>          <th></th>              <th>Другие Корп-ии:</th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Comand\Capitan.html">Капитан</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Azara.html">Azara Cleaning</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Comand\Personal.html">Глав. Персонала</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Chang.html">Другая статья</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+              <th>Инженерия:</th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Donk.html">Donk</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Engineering\Atmos.html">Атмос</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\DrunkMasters.html">Drunk Masters</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Engineering\DAM.html">ДАМ</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Gorlex.html">Gorlex</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Engineering\Singularity.html">Сингулярность</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\interGalactic.html">InterGalactic</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Engineering\Solar.html">Солн. Панели</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Pharmaceutics.html">Pharmaceutics</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Engineering\TEG.html">ТЭГ</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Robust.html">Robust</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Engineering\Tesla.html">Тесла</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Saibasan.html">Saibasan</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+              <th>Медицина:</th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Shady.html">Shady’s Cigarettes</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Medicine\Chemistry.html">Химия</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\OtherCorps\Waffle.html">Waffle Co.</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Medicine\Healing.html">Лечение</a></th>          <th></th>              <th>Игровые расы:</th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+              <th>РНД:</th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Arachnid.html">Арахниды</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Science\Anomalys.html">Аномалии</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Diona.html">Дионы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\1_Guides\Science\Epistemics.html">Эпистемика</a></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Dwarf.html">Дворфы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+              <th>СБ:</th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Felinid.html">Фелениды</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+              <th>Сервис:</th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Goblin.html">Гоблины</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Harpy.html">Гарпии</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Human.html">Люди</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Moth.html">Нианы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Oni.html">О́ни</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Plasmaman.html">Плазмамены</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\reptilian.html">Унатхи</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\shadowkin.html">Сумеречники</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\SlimePerson.html">Слаймолюды</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Vox.html">Воксы</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th><a href="../../../ArticleHubs\3_Lore\Playable\Vulpkanin.html">Вульпканины</a></th>          <th></th>          <th></th>          <th></th>            </tr>
+            <tr>
+          <th></th>          <th></th>          <th></th>          <th></th>          <th></th>          <th></th>            </tr>
             </table>
           </div>
         </nav>
