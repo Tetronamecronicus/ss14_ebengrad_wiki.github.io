@@ -5,7 +5,7 @@
 }
 
 body {
-    text-shadow: 0 0 0.4cm red;
+    /*text-shadow: 0 0 0.4cm red;*/
     background-image: url("img/BackGround.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@ body {
     overflow-wrap:normal;
     text-decoration:none;
     color: rgb(88, 166, 255);
-    text-shadow: 0 0 0.1cm red;
+    /*text-shadow: 0 0 0.1cm red;*/
     padding: 0.2cm;
     border-style: outset;
     border-width: 0.1cm;
@@ -165,7 +165,7 @@ body {
     white-space: nowrap;
     overflow-wrap:normal;
     text-decoration:none;
-    text-shadow: 0 0 0.4cm black;
+    /*text-shadow: 0 0 0.4cm black;*/
 }
 
 .imageButtonContainer {
@@ -391,7 +391,7 @@ footer nav, .scroll, .side nav{
     overflow-wrap:normal;
     text-decoration:none;
     color: rgb(88, 166, 255);
-    text-shadow: 0 0 0.1cm red;
+    /*text-shadow: 0 0 0.1cm red;*/
     padding: 0.2cm;
     border-style: outset;
     border-width: 0.1cm;
