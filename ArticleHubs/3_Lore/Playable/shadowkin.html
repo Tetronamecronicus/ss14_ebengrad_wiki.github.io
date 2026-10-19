@@ -14,67 +14,64 @@
     <section class="side" id="sideBar">
       <button class="closeButton" onclick="closeNav()">←</button>
 
-      <a href="../../../index.html" style="margin-top: 1cm;"><img src="../../../img/Ebengrad.png" alt="Null"></a>
+<a href="../../../index.html" style="margin-top: 1cm;"><img src="../../../img/Ebengrad.png" alt="Null"></a>
 
       <h1>Null</h1>
       <nav>
       <p>Информация о сервере:</p>
         <div style="font-size: small;">
 
-    
-      </div>
-        </nav>
-        <nav>
-        <p>Статьи-хабы:</p>
-          <div style="font-size: small;">
 
-            <a href="../../../ArticleHubs\3_Lore/0_Hub.html">Лор</a>
+        </div>
+      </nav>
+      <nav>
+      <p>Статьи-хабы:</p>
+        <div style="font-size: small;">
 
-          </div>
-        </nav>
-        <button class="button" onclick="downFunction()">К Статьям</button>
-        <section class="sideBottom" id="sideBar2">
+          <a href="../../../ArticleHubs\3_Lore/0_Hub.html">Лор</a>
 
-        <a href="https://discord.com/invite/sqjEbTgm6R/"><img class="linksImg" src="../../../img/discord.svg" alt="Discord">ДС</a>
-        <a href="https://ss14.madeline.sh/hub/2110"><img class="linksImg" src="../../../img/crown.svg" alt="Monitoring">Мон.</a>
-        <a href="https://boosty.to/bruninrts/donate/"><img class="linksImg" src="../../../img/boosty.svg" alt="Boosty">Бусти</a>
+        </div>
+      </nav>
+      <button class="button" onclick="downFunction()">К Статьям</button>
+      <section class="sideBottom" id="sideBar2">
 
-          <p style="color: rgb(48, 48, 48); margin-top: 0.3cm; text-shadow: none;">Powered by: nothing</p>
-        </section>
-        <script>
-          function downFunction() {
-            document.body.scrollTop = 9999999;
-            document.documentElement.scrollTop = 9999999;
-            document.getElementById("sideBar").style.width = "0px";
-            document.getElementById("sideBar2").style.width = "0px";
-            document.getElementById("sideBar").style.padding = "0cm";
-            document.getElementById("sideBar2").style.padding = "0cm";
-            document.getElementById("sideBar").style.border.width = "0px";
-            document.getElementById("sideBar2").style.border.width = "0px";
-          }
-        </script>
+        <p style="color: rgb(48, 48, 48); margin-top: 0.3cm; text-shadow: none;">Powered by: nothing</p>
       </section>
       <script>
-        function openNav() {
-          document.getElementById("sideBar").style.width = "180px";
-          document.getElementById("sideBar2").style.width = "180px";
-          document.getElementById("sideBar").style.padding = "0.1cm";
-          document.getElementById("sideBar2").style.padding = "0.1cm";
-          document.getElementById("sideBar").style.border.width = "3px";
-          document.getElementById("sideBar2").style.border.width = "3px";
-          //document.getElementById("bod").style = "margin-left: 180px";
-        }
-
-        function closeNav() {
+        function downFunction() {
+          document.body.scrollTop = 9999999;
+          document.documentElement.scrollTop = 9999999;
           document.getElementById("sideBar").style.width = "0px";
           document.getElementById("sideBar2").style.width = "0px";
           document.getElementById("sideBar").style.padding = "0cm";
           document.getElementById("sideBar2").style.padding = "0cm";
           document.getElementById("sideBar").style.border.width = "0px";
           document.getElementById("sideBar2").style.border.width = "0px";
-          //document.getElementById("bod").style = "margin-left: 0px";
         }
       </script>
+    </section>
+    <script>
+      function openNav() {
+        document.getElementById("sideBar").style.width = "180px";
+        document.getElementById("sideBar2").style.width = "180px";
+        document.getElementById("sideBar").style.padding = "0.1cm";
+        document.getElementById("sideBar2").style.padding = "0.1cm";
+        document.getElementById("sideBar").style.border.width = "3px";
+        document.getElementById("sideBar2").style.border.width = "3px";
+        //document.getElementById("bod").style = "margin-left: 180px";
+      }
+
+      function closeNav() {
+        document.getElementById("sideBar").style.width = "0px";
+        document.getElementById("sideBar2").style.width = "0px";
+        document.getElementById("sideBar").style.padding = "0cm";
+        document.getElementById("sideBar2").style.padding = "0cm";
+        document.getElementById("sideBar").style.border.width = "0px";
+        document.getElementById("sideBar2").style.border.width = "0px";
+        //document.getElementById("bod").style = "margin-left: 0px";
+      }
+    </script>
+
     <header>
       <h2 style="border-left-color: grey;">Сумеречники</h2>
     </header>
@@ -90,7 +87,7 @@
         </section>
       </article>
     </main>
-  <footer>
+    <footer>
       <h2>Информация о сервере:</h2>
       <nav>
         <div style="font-size: large;">
@@ -112,6 +109,8 @@
               <th>Лор:</th>
             </tr>
             <tr>
+          <th><a href="../../../ArticleHubs\3_Lore/Countrys.html">Государства</a></th>            </tr>
+            <tr>
           <th><a href="../../../ArticleHubs\3_Lore/Playable.html">Игровые расы</a></th>            </tr>
             <tr>
           <th></th>            </tr>
@@ -127,7 +126,13 @@
               <th>Лор:</th>
             </tr>
             <tr>
+          <th><a href="../../../ArticleHubs\3_Lore\Countrys.html">Государства</a></th>            </tr>
+            <tr>
           <th><a href="../../../ArticleHubs\3_Lore\Playable.html">Игровые расы</a></th>            </tr>
+            <tr>
+              <th>Государства:</th>            </tr>
+            <tr>
+          <th><a href="../../../ArticleHubs\3_Lore\Countrys\TDF.html">ТДФ</a></th>            </tr>
             <tr>
               <th>Игровые расы:</th>            </tr>
             <tr>
@@ -140,10 +145,8 @@
       </div>
 
       <h2 style="padding-top: 0.1cm;">Полезные ссылки:</h2>
-      <p class="links"><a href="https://discord.com/invite/sqjEbTgm6R/"><img class="linksImg" src="../../../img/discord.svg" alt="Discord">Дискорд сервер</a></p>
-      <p class="links"><a href="https://ss14.madeline.sh/hub/2110"><img class="linksImg" src="../../../img/crown.svg" alt="Monitoring">Мониторинг активности сервера</a></p>
-      <p class="links"><a href="https://boosty.to/bruninrts/donate/"><img class="linksImg" src="../../../img/boosty.svg" alt="Boosty">Бусти сервера</a></p>
-  </footer>
+
+
   <script>
     function SearchCats() {
       var input, filter, ul, tr, th, i, a;
