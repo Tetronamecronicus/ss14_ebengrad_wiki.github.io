@@ -24,6 +24,9 @@ body {
   body {margin-left: 0px;}
 }*/
 
+.italic {
+    font-style: italic;
+}
 
 .side {
     box-shadow: 0cm 0 1cm black, 0 0 1cm black inset;
@@ -528,7 +531,4 @@ footer li{
 @keyframes bidSizeUp {
     from { transform:scale(1,1); }
     to { transform: scale(1.15,1.15); }
-}
-.classniuclass {
-
 }
