@@ -28,6 +28,25 @@ body {
     font-style: italic;
 }
 
+.article {
+    border-width: 0.0cm;
+
+    border-top: 1cm;
+    border-top-width: 0.2cm;
+    padding-top: 0.7cm;
+    border-top-color: darkred;
+    margin-top: 0.2cm;
+
+    border-bottom: 1cm;
+    border-bottom-width: 0.2cm;
+    padding-bottom: 0.7cm;
+    border-bottom-color: darkred;
+    margin-bottom: 0.2cm;
+
+    border-style:ridge;
+    border-radius: 0.5cm;
+}
+
 .side {
     box-shadow: 0cm 0 1cm black, 0 0 1cm black inset;
     height: 100%; /* Full-height: remove this if you want "auto" height */
